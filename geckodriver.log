@@ -1,0 +1,32 @@
+1697238149367	geckodriver	INFO	Listening on 127.0.0.1:63351
+1697238152425	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--no-sandbox" "--disable-dev-shm-usage" "- ... 2" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\marce\\AppData\\Local\\Temp\\rust_mozprofileSlBqrT"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1697238152891	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+console.error: "Warning: unrecognized command line flag" "-ignore-certificate-errors"
+console.error: "Warning: unrecognized command line flag" "-log-level"
+console.error: "Warning: unrecognized command line flag" "-disable-notifications"
+1697238152995	Marionette	INFO	Listening on port 63360
+WebDriver BiDi listening on ws://127.0.0.1:63352
+Read port: 63360
+1697238153258	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1697238153259	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:63350","sslProxy":"127.0.0.1:63350"}
+DevTools listening on ws://127.0.0.1:63352/devtools/browser/247e834f-6a96-44b0-b433-386524a0f784
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3ile54/yc/l/es_LA/Ygz73fhl8zm.js?_nc_x=Ij3Wp8lg5Kz, line 116: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1697238202717	Marionette	INFO	Stopped listening on port 63360
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iHtm4/yR/l/es_LA/8hfpgqwwlod.js?_nc_x=Ij3Wp8lg5Kz, line 1479: Script terminated by timeout at:
+rc@https://static.xx.fbcdn.net/rsrc.php/v3iHtm4/yR/l/es_LA/8hfpgqwwlod.js?_nc_x=Ij3Wp8lg5Kz:1479:18523
+Z@https://static.xx.fbcdn.net/rsrc.php/v3iHtm4/yR/l/es_LA/8hfpgqwwlod.js?_nc_x=Ij3Wp8lg5Kz:1479:152360
+$@https://static.xx.fbcdn.net/rsrc.php/v3iHtm4/yR/l/es_LA/8hfpgqwwlod.js?_nc_x=Ij3Wp8lg5Kz:1479:158926
+Ah@https://static.xx.fbcdn.net/rsrc.php/v3iHtm4/yR/l/es_LA/8hfpgqwwlod.js?_nc_x=Ij3Wp8lg5Kz:1479:81857
+Tj@https://static.xx.fbcdn.net/rsrc.php/v3iHtm4/yR/l/es_LA/8hfpgqwwlod.js?_nc_x=Ij3Wp8lg5Kz:1479:117827
+Qj@https://static.xx.fbcdn.net/rsrc.php/v3iHtm4/yR/l/es_LA/8hfpgqwwlod.js?_nc_x=Ij3Wp8lg5Kz:1479:116995
+Pj@https://static.xx.fbcdn.net/rsrc.php/v3iHtm4/yR/l/es_LA/8hfpgqwwlod.js?_nc_x=Ij3Wp8lg5Kz:1479:116909
+Oj@https://static.xx.fbcdn.net/rsrc.php/v3iHtm4/yR/l/es_LA/8hfpgqwwlod.js?_nc_x=Ij3Wp8lg5Kz:1479:116753
+xj@https://static.xx.fbcdn.net/rsrc.php/v3iHtm4/yR/l/es_LA/8hfpgqwwlod.js?_nc_x=Ij3Wp8lg5Kz:1479:112765
+N@https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/_ozLl0Tiqn2.js?_nc_x=Ij3Wp8lg5Kz:222:2343
+U@https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/_ozLl0Tiqn2.js?_nc_x=Ij3Wp8lg5Kz:222:3045
+
+Dynamically enable window occlusion 1
