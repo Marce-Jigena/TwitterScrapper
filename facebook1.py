@@ -37,22 +37,27 @@ driver.find_element(By.CSS_SELECTOR, '[data-testid="LoginForm_Login_Button"]').c
 
 time.sleep(15)
 
-
-tweetUsers = driver.find_elements(By.CSS_SELECTOR, '[data-testid="User-Name"]')
-for user in tweetUsers:
-    print("Usuario:" + user.text)
-
-tweetTexts = driver.find_elements(By.CSS_SELECTOR, '[data-testid="tweetText"]')
-for text in tweetTexts:
-    print("Tweet:" + text.text)
-
-tweetFotos = driver.find_elements(By.CSS_SELECTOR, '[data-testid="tweetPhoto"] img')
-for foto in tweetFotos:
-    print("Foto:" + foto.get_attribute("src"))
-
-tweetFotoPerfil = driver.find_elements(By.CSS_SELECTOR, '[data-testid="Tweet-User-Avatar"] img')
-for FPerfil in tweetFotoPerfil:
-    print("FotoPerfil:" + FPerfil.get_attribute("src"))
+tweets = driver.find_elements(By.CSS_SELECTOR, '[data-testid="cellInnerDiv"]')
+for tweet in tweets:
+    try:
+        tweetUsers = tweet.find_element(By.CSS_SELECTOR, '[data-testid="User-Name"] [role="link"]')
+    except:
+        print("No hay mas tweets")
+        quit()
+    else:
+        print("Usuario:" + tweetUsers.text)
+    tweetAt = tweet.find_element(By.CSS_SELECTOR, '[data-testid="User-Name"] [tabindex="-1"]')
+    print("@:" + tweetAt.text)
+    tweetTexts = tweet.find_element(By.CSS_SELECTOR, '[data-testid="tweetText"]')
+    print("Tweet:" + tweetTexts.text)
+    try:
+        tweetFotos = tweet.find_element(By.CSS_SELECTOR, '[data-testid="tweetPhoto"] img')
+    except:
+        print("No hay foto adjunta")
+    else:
+        print("Foto:" + tweetFotos.get_attribute("src"))
+    tweetFotoPerfil = tweet.find_element(By.CSS_SELECTOR, '[data-testid="Tweet-User-Avatar"] img')
+    print("FotoPerfil:" + tweetFotoPerfil.get_attribute("src"))
 
 
 #aria-label="Cronología: Buscar en la cronología"
