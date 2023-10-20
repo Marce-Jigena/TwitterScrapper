@@ -1,21 +1,16 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-import time
+import pypyodbc as odbc
 
-chrome_options = Options()
-chrome_options.add_experimental_option("detach", True)
-driver = webdriver.Chrome(options=chrome_options)
+class Db:
 
-PATH = "C:\Program Files (x86)\chromedriver.exe"
+    DRIVER_NAME = 'SQL SERVER'
+    SERVER_NAME = 'LAPTOP-KPJGE02C'
+    DATABASE_NAME = 'TweeterScrapper'
 
-driver.get("https://twitter.com/hashtag/LivingIbrp?src=hashtag_click")
+    connection_string = f"""
+        DRIVER={{{DRIVER_NAME}}};
+        SERVER={SERVER_NAME};
+        DATABASE={DATABASE_NAME};
+        Trust_Connection=yes;
+    """
 
-time.sleep(5)
-
-email = "TweetTest245@proton.me"
-userPassword = "TweetTest"
-
-username = driver.find_element(By.CSS_SELECTOR, '[name="text"]')
-
-print(username)
+    conn = odbc.connect(connection_string)
